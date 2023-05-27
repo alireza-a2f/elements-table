@@ -1,0 +1,809 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+input
+{
+	font-size: 18px;
+	font-family: b nazanin , b titr , segoe print , arial;
+	font-weight: bold;
+}
+table tr td
+{
+	font-size: 24px;
+	font-family: b tabassom , b nazanin , b titr , segoe print , arial;
+	Cursor: help;
+}
+#else
+{
+	Cursor: default;
+}
+#cross
+{
+	Cursor: hand;
+}
+#up
+{
+	color: black;
+}
+#down
+{
+	color: orange;
+}
+#bup
+{
+	color: lightgreen;
+}
+#bdown
+{
+	color: black;
+}
+#odown
+{
+	color: #FFE4C4;
+}
+#oup
+{
+	color: black;
+}
+</style>
+<script language="JavaScript">
+<!-- Hide this part from older browsers
+function display( Name , Number , Weight , Melt , Freeze )
+{
+	with( document.table )
+	{
+		name.value = Name;
+		number.value = Number;
+		weight.value = Weight;
+		melt.value = Melt;
+		freeze.value = Freeze;
+	}
+}
+// Stop hiding -->
+</script>
+<title>جدول تناوبی عناصر</title>
+</head>
+<body dir="rtl" draggable="true">
+<font face="b tabassom">
+<h2 align="center">جدول تناوبی عناصر</h2>
+<form dir="ltr" onerror="javascript: alert( 'This page was unable to load completely!' )">
+  <table cellspacing="2" cellpadding="0" width="1000" height="400" align="center">
+    <tr>
+      <td width="5.555555555%" align="center" bgcolor="#FFE4C4"
+	  onmouseover="javascript: this.bgColor = 'FFF5E9';"
+	  onmouseout="javascript: this.bgColor = 'FFE4C4';"
+	  onmousedown="javascript: this.bgColor = 'FFE4C4' , this.id = 'down';"
+	  onmouseup="javascript: this.bgColor = 'FFF5E9' , this.id = 'up';"
+      onclick="javascript:display('هیدروژن','1','1/0079','-259/14C','-252/87C');">H</td>
+      <td id="else" colspan="16"></td>
+      <td width="5.555555555%" align="center" bgcolor="#FFE4C4"
+	  onmouseover="javascript: this.bgColor = 'FFF5E9';"
+	  onmouseout="javascript: this.bgColor = 'FFE4C4';"
+	  onmousedown="javascript: this.bgColor = 'FFE4C4' , this.id = 'down';"
+	  onmouseup="javascript: this.bgColor = 'FFF5E9' , this.id = 'up';"
+      onclick="javascript:display('هلیم','2','4/0026','-272C @ 26ATM','-268/6C');">He</td>
+    </tr>
+    <tr>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('لیتیم','3','6/94','180/54 C','1347 C');">Li</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('برلیم','4','9/01218','1278 C','2970 C');">Be</td>
+      <td id="else" colspan="10"></td>
+      <td width="5.555555555%" align="center" bgcolor="#FF4500"
+	  onmouseover="javascript: this.bgColor = 'FF7722';"
+	  onmouseout="javascript: this.bgColor = 'FF4500';"
+	  onmousedown="javascript: this.bgColor = 'FF4500' , this.id = 'odown';"
+	  onmouseup="javascript: this.bgColor = 'FF7722' , this.id = 'oup';"
+      onclick="javascript:display('بور','5','10/81','2300 C','2550 C');">B</td>
+      <td width="5.555555555%" align="center" bgcolor="#FFE4C4"
+	  onmouseover="javascript: this.bgColor = 'FFF5E9';"
+	  onmouseout="javascript: this.bgColor = 'FFE4C4';"
+	  onmousedown="javascript: this.bgColor = 'FFE4C4' , this.id = 'down';"
+	  onmouseup="javascript: this.bgColor = 'FFF5E9' , this.id = 'up';"
+      onclick="javascript:display('کربن','6','12/011','3500 C','4827 C');">C</td>
+      <td width="5.555555555%" align="center" bgcolor="#FFE4C4"
+	  onmouseover="javascript: this.bgColor = 'FFF5E9';"
+	  onmouseout="javascript: this.bgColor = 'FFE4C4';"
+	  onmousedown="javascript: this.bgColor = 'FFE4C4' , this.id = 'down';"
+	  onmouseup="javascript: this.bgColor = 'FFF5E9' , this.id = 'up';"
+      onclick="javascript:display('نیتروژن','7','14/0067','-209/9 C','-195/8 C');">N</td>
+      <td width="5.555555555%" align="center" bgcolor="#FFE4C4"
+	  onmouseover="javascript: this.bgColor = 'FFF5E9';"
+	  onmouseout="javascript: this.bgColor = 'FFE4C4';"
+	  onmousedown="javascript: this.bgColor = 'FFE4C4' , this.id = 'down';"
+	  onmouseup="javascript: this.bgColor = 'FFF5E9' , this.id = 'up';"
+      onclick="javascript:display('اکسیژن','8','15/9994','-218/4 C','-183/0 C');">O</td>
+      <td width="5.555555555%" align="center" bgcolor="#FFE4C4"
+	  onmouseover="javascript: this.bgColor = 'FFF5E9';"
+	  onmouseout="javascript: this.bgColor = 'FFE4C4';"
+	  onmousedown="javascript: this.bgColor = 'FFE4C4' , this.id = 'down';"
+	  onmouseup="javascript: this.bgColor = 'FFF5E9' , this.id = 'up';"
+      onclick="javascript:display('فلوئور','9','18/998403','-219/62 C','-188/14 C');">F</td>
+      <td width="5.555555555%" align="center" bgcolor="#FFE4C4"
+	  onmouseover="javascript: this.bgColor = 'FFF5E9';"
+	  onmouseout="javascript: this.bgColor = 'FFE4C4';"
+	  onmousedown="javascript: this.bgColor = 'FFE4C4' , this.id = 'down';"
+	  onmouseup="javascript: this.bgColor = 'FFF5E9' , this.id = 'up';"
+      onclick="javascript:display('نئون','10','20/17','-248/6 C','-246/1 C');">Ne</td>
+    </tr>
+    <tr>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('سدیم','11','22/98977','97/8 C','882/9 C');">Na</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('منیزیم','12','24/305','638/8 C','1090 C');">Mg</td>
+      <td id="else" colspan="10"></td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('آلومینیوم','13','26/98154','660/37 C','2467 C');">Al</td>
+      <td width="5.555555555%" align="center" bgcolor="#FF4500"
+	  onmouseover="javascript: this.bgColor = 'FF7722';"
+	  onmouseout="javascript: this.bgColor = 'FF4500';"
+	  onmousedown="javascript: this.bgColor = 'FF4500' , this.id = 'odown';"
+	  onmouseup="javascript: this.bgColor = 'FF7722' , this.id = 'oup';"
+      onclick="javascript:display('سيليسيم','14','28/0855','1410 C','2355 C');">Si</td>
+      <td width="5.555555555%" align="center" bgcolor="#FFE4C4"
+	  onmouseover="javascript: this.bgColor = 'FFF5E9';"
+	  onmouseout="javascript: this.bgColor = 'FFE4C4';"
+	  onmousedown="javascript: this.bgColor = 'FFE4C4' , this.id = 'down';"
+	  onmouseup="javascript: this.bgColor = 'FFF5E9' , this.id = 'up';"
+      onclick="javascript:display('فسفر','15','30/97376','44/1 C','280 C');">P</td>
+      <td width="5.555555555%" align="center" bgcolor="#FFE4C4"
+	  onmouseover="javascript: this.bgColor = 'FFF5E9';"
+	  onmouseout="javascript: this.bgColor = 'FFE4C4';"
+	  onmousedown="javascript: this.bgColor = 'FFE4C4' , this.id = 'down';"
+	  onmouseup="javascript: this.bgColor = 'FFF5E9' , this.id = 'up';"
+      onclick="javascript:display('گوگرد','16','32/06','112/8 C','444/6 C');">S</td>
+      <td width="5.555555555%" align="center" bgcolor="#FFE4C4"
+	  onmouseover="javascript: this.bgColor = 'FFF5E9';"
+	  onmouseout="javascript: this.bgColor = 'FFE4C4';"
+	  onmousedown="javascript: this.bgColor = 'FFE4C4' , this.id = 'down';"
+	  onmouseup="javascript: this.bgColor = 'FFF5E9' , this.id = 'up';"
+      onclick="javascript:display('کلر','17','35/453','-100/98 C','-34/6 C');">Cl</td>
+      <td width="5.555555555%" align="center" bgcolor="#FFE4C4"
+	  onmouseover="javascript: this.bgColor = 'FFF5E9';"
+	  onmouseout="javascript: this.bgColor = 'FFE4C4';"
+	  onmousedown="javascript: this.bgColor = 'FFE4C4' , this.id = 'down';"
+	  onmouseup="javascript: this.bgColor = 'FFF5E9' , this.id = 'up';"
+      onclick="javascript:display('آرگون','18','39/948','-189/3 C','-186 C');">Ar</td>
+    </tr>
+    <tr>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('پتاسیم','19','39/0983','63/65 C','774 C');">K</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('کلسیم','20','40/08','839 C','1484/4 C');">Ca</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('اسکاندیم','21','44/9559','1539 C','2832 C');">Sc</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('تیتانیم','22','47/90','1660 C','3287 C');">Ti</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('وانادیم','23','50/9415','1890 C','3380 C');">V</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('کروم','24','51/996','1857 C','2672 C');">Cr</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('منگنز','25','54/9380','1245 C','1962 C');">Mn</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('آهن','26','55/847','1535 C','2750 C');">Fe</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('کبالت','27','58/9332','1495 C','2870 C');">Co</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('نیکل','28','58/71','1453 C','2732 C');">Ni</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('مس','29','63/546','1803 C','2567 C');">Cu</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('روی','30','65/38','419/58 C','907 C');">Zn</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('گالیم','31','69/735','29/78 C','2403 C');">Ga</td>
+      <td width="5.555555555%" align="center" bgcolor="#FF4500"
+	  onmouseover="javascript: this.bgColor = 'FF7722';"
+	  onmouseout="javascript: this.bgColor = 'FF4500';"
+	  onmousedown="javascript: this.bgColor = 'FF4500' , this.id = 'odown';"
+	  onmouseup="javascript: this.bgColor = 'FF7722' , this.id = 'oup';"
+      onclick="javascript:display('ژرمانیم','32','72/59','937/4 C','2830 C');">Ge</td>
+      <td width="5.555555555%" align="center" bgcolor="#FF4500"
+	  onmouseover="javascript: this.bgColor = 'FF7722';"
+	  onmouseout="javascript: this.bgColor = 'FF4500';"
+	  onmousedown="javascript: this.bgColor = 'FF4500' , this.id = 'odown';"
+	  onmouseup="javascript: this.bgColor = 'FF7722' , this.id = 'oup';"
+      onclick="javascript:display('آرسنیک','33','74/9216','81 C @ 28ATM','Sublimes at 613')">As</td>
+      <td width="5.555555555%" align="center" bgcolor="#FFE4C4"
+	  onmouseover="javascript: this.bgColor = 'FFF5E9';"
+	  onmouseout="javascript: this.bgColor = 'FFE4C4';"
+	  onmousedown="javascript: this.bgColor = 'FFE4C4' , this.id = 'down';"
+	  onmouseup="javascript: this.bgColor = 'FFF5E9' , this.id = 'up';"
+      onclick="javascript:display('سلنیم','34','78/96','217 C','684/9 C');">Se</td>
+      <td width="5.555555555%" align="center" bgcolor="#FFE4C4"
+	  onmouseover="javascript: this.bgColor = 'FFF5E9';"
+	  onmouseout="javascript: this.bgColor = 'FFE4C4';"
+	  onmousedown="javascript: this.bgColor = 'FFE4C4' , this.id = 'down';"
+	  onmouseup="javascript: this.bgColor = 'FFF5E9' , this.id = 'up';"
+      onclick="javascript:display('برم','35','79/904','-7/2 C','58/78 C');">Br</td>
+      <td width="5.555555555%" align="center" bgcolor="#FFE4C4"
+	  onmouseover="javascript: this.bgColor = 'FFF5E9';"
+	  onmouseout="javascript: this.bgColor = 'FFE4C4';"
+	  onmousedown="javascript: this.bgColor = 'FFE4C4' , this.id = 'down';"
+	  onmouseup="javascript: this.bgColor = 'FFF5E9' , this.id = 'up';"
+      onclick="javascript:display('کریپتون','36','83/80','-157/2 C','-153/4 C');">Kr</td>
+    </tr>
+    <tr>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('روبیدیم','37','85/467','38/89 C','688 C');">Rb</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('استرونتيوم','38','87/62','769 C','1384 C');">Sr</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('ايتريم','39','88/9059','1523 C','3337 C');">Y</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('زیرکونیم','40','91/22','1852 C','4377 C');">Zr</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('نيوبيم','41','92/9064','2468 C','4927 C');">Nb</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('موليبدن','42','95/94','2617 C','4612 C');">Mo</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('تکنسيم','43','98/9062','2200 C','4877 C');">Tc</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('روتنيم','44','101/07','2250 C','3900 C');">Ru</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('روديم','45','102/9055','1966 C','3727 C');">Rh</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('پالاديم','46','106/4','1552 C','2927 C');">Pd</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('نقره','47','107/868','961/93 C','2212 C');">Ag</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('کادميم','48','112/41','320/9 C','765 C');">Cd</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('ایندیم','49','114/82','156/61 C','2000 C');">In</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('قلع','50','118/69','231/9 C','2270 C');">Sn</td>
+      <td width="5.555555555%" align="center" bgcolor="#FF4500"
+	  onmouseover="javascript: this.bgColor = 'FF7722';"
+	  onmouseout="javascript: this.bgColor = 'FF4500';"
+	  onmousedown="javascript: this.bgColor = 'FF4500' , this.id = 'odown';"
+	  onmouseup="javascript: this.bgColor = 'FF7722' , this.id = 'oup';"
+      onclick="javascript:display('انتيموان','51','121/75','630 C','1750 C');">Sb</td>
+      <td width="5.555555555%" align="center" bgcolor="#FF4500"
+	  onmouseover="javascript: this.bgColor = 'FF7722';"
+	  onmouseout="javascript: this.bgColor = 'FF4500';"
+	  onmousedown="javascript: this.bgColor = 'FF4500' , this.id = 'odown';"
+	  onmouseup="javascript: this.bgColor = 'FF7722' , this.id = 'oup';"
+      onclick="javascript:display('تلوریم','52','127/60','449/5 C','989/8 C');">Te</td>
+      <td width="5.555555555%" align="center" bgcolor="#FFE4C4"
+	  onmouseover="javascript: this.bgColor = 'FFF5E9';"
+	  onmouseout="javascript: this.bgColor = 'FFE4C4';"
+	  onmousedown="javascript: this.bgColor = 'FFE4C4' , this.id = 'down';"
+	  onmouseup="javascript: this.bgColor = 'FFF5E9' , this.id = 'up';"
+      onclick="javascript:display('ید','53','126/9045','113/5 C','184 C @ 35 atm')">I</td>
+      <td width="5.555555555%" align="center" bgcolor="#FFE4C4"
+	  onmouseover="javascript: this.bgColor = 'FFF5E9';"
+	  onmouseout="javascript: this.bgColor = 'FFE4C4';"
+	  onmousedown="javascript: this.bgColor = 'FFE4C4' , this.id = 'down';"
+	  onmouseup="javascript: this.bgColor = 'FFF5E9' , this.id = 'up';"
+      onclick="javascript:display('زنون','54','131/30','-111/9 C','-108/1 C');">Xe</td>
+    </tr>
+    <tr>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('سزیم','55','132/9054','28/5 C','678/4 C');">Cs</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('باریم','56','137/33','725 C','1140 C');">Ba</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('لانتان','57','138/9055','920 C','3469 C');">La</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('هافنيم','72','178/49','2150 C','5400 C');">Hf</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('تانتال','73','180/947','2996 C','5425 C');">Ta</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('تنگستن','74','183/85','3410 C','5660 C');">W</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('رنيم','75','186/207','3180 C','5627 C');">Re</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('اسميم','76','190/2','3045 C','5027 C');">Os</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('اريديوم','77','192/22','2410 C','4527 C');">Ir</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('پلاتين','78','195/09','1772 C','3827 C');">Pt</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('طلا','79','196/9665','1064/43 C','2807 C');">Au</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('جيوه','80','200/59','-38/87 C','356/58 C');">Hg</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('تاليم','81','204/37','303/5 C','1457C');">Tl</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('سرب','82','207/2','327/5 C','1740 C');">Pb</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('بيسموت','83','208/9804','271/3 C','1560C');">Bi</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('پولونيم','84','(209)','254 C','962 C');">Po</td>
+      <td width="5.555555555%" align="center" bgcolor="#FF4500"
+	  onmouseover="javascript: this.bgColor = 'FF7722';"
+	  onmouseout="javascript: this.bgColor = 'FF4500';"
+	  onmousedown="javascript: this.bgColor = 'FF4500' , this.id = 'odown';"
+	  onmouseup="javascript: this.bgColor = 'FF7722' , this.id = 'oup';"
+      onclick="javascript:display('استاتين','85','(210)','302 C','337 C');">At</td>
+      <td width="5.555555555%" align="center" bgcolor="#FFE4C4"
+	  onmouseover="javascript: this.bgColor = 'FFF5E9';"
+	  onmouseout="javascript: this.bgColor = 'FFE4C4';"
+	  onmousedown="javascript: this.bgColor = 'FFE4C4' , this.id = 'down';"
+	  onmouseup="javascript: this.bgColor = 'FFF5E9' , this.id = 'up';"
+      onclick="javascript:display('رادون','86','(222)','-71 C\t','-61/8 C');">Rn</td>
+    </tr>
+    <tr>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('فرانسیم','87','(223)','27 C\t','677 C');">Fr</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('رادیم','88','226/0254','700 C','1737 C');">Ra</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('اکتينيم','89','(227)','1050 C','3200 C');">Ac</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('آنیل کوادیم','104','(260)','N/A C','N/A C');">Unq</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('آنیل پنتیم','105','(260)','N/A C','N/A C');">Unp</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('آنیل هگزیم','106','(263)','N/A C','N/A C');">Unh</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('آنیل سپتیم','107','(262)','N/A C','N/A C');">Uns</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('آنیل اکتیم', '108', '(265)', ' N/A C', 'N/A C');">Uno</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('آنیل انیم', '109', '(267)', ' N/A C', 'N/A C');">Une</td>
+      <td id="else" colspan="9"></td>
+    </tr>
+    <tr>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('سريم','58','140/12','795 C','3257 C');">Ce</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('پرازئوديميم','59','140/9077','935 C','3127 C');">Pr</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('نئوديميم','60','144/24','1010 C','3127 C');">Nd</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('پرومتيم','61','(145)','N/A C','N/A C');">Pm</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('ساماريم','62','150/4','1072 C','1900 C');">Sm</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('اروپيم','63','151/96','822 C','1597 C');">Eu</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('گادولينيم','64','157/25','1311 C','3233 C');">Gd</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('تربيم','65','158/9254','1360 C','3041 C');">Tb</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('ديسپروزيم','66','162/50','1412 C','2562 C');">Dy</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('هولميم','67','164/9304','1470 C','2720 C');">Ho</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('اربيم','68','167/26','1522 C','2510 C');">Er</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('توليم','69','168/9342','1545 C','1727 C');">Tm</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('ايتربيم','70','173/04','824 C','1466 C');">Yb</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('لوتيسم','71','174/96','1656 C','3315 C');">Lu</td>
+      <td id="else" colspan="4"></td>
+    </tr>
+    <tr>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('توريم','90','232/0381','1750 C','4790 C');">Th</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('پرو اکتينيم','91','231/0359','1600 C','N/A C');">Pa</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('اورانيم','92','238/029','1132 C','3818 C');">U</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('نپتونيم','93','237/0482','640 C','3902 C');">Np</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('پلوتونيم','94','(244)','639/5 C','3235 C');">Pu</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('امريکيم','95','(243)','994 C','2607 C');">Am</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('کوريم','96','(247)','1340 C','N/A C');">Cm</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('برکليم','97','(247)','N/A C','N/A C');">Bk</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('کاليفرنيم','98','(251)','N/A C','N/A C');">Cf</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('اينشتينيم','99','(254)','N/A C','N/A C');">Es</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('فرمیم','100','(257)','N/A C','N/A C');">Fm</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('مندلويم','101','(258)','N/A C','N/A C');">Md</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('نوبليم','102','(259)','N/A C','N/A C');">No</td>
+      <td width="5.555555555%" align="center" bgcolor="#5F9EA0"
+	  onmouseover="javascript: this.bgColor = '6FBFB2';"
+	  onmouseout="javascript: this.bgColor = '5F9EA0';"
+	  onmousedown="javascript: this.bgColor = '5F9EA0' , this.id = 'bup';"
+	  onmouseup="javascript: this.bgColor = '6FBFB2' , this.id = 'bdown';"
+      onclick="javascript:display('لورنسيم','103','(260)','N/A C','N/A C');">Lr</td>
+      <td id="else" colspan="4"></td>
+    </tr>
+  </table>
+</form>
+<form name="table">
+  <table width="500" align="center">
+    <tr>
+      <td id="else" align="center" width="33%">نام عنصر</td>
+      <td id="else" align="center" width="33%">شماره ی خانه</td>
+      <td id="else" align="center" width="33%">وزن</td>
+    </tr>
+    <tr dir="ltr">
+      <td id="else" align="center" width="33%">
+	  <input type="text" name="name" value=" " size="14" readonly></td>
+      <td id="else" align="center" width="33%">
+	  <input type="text" name="number" value=" " size="6" readonly></td>
+      <td id="else" align="center" width="33%">
+	  <input type="text" name="weight" value=" " size="16" readonly></td>
+    </tr>
+    <tr dir="ltr">
+      <td id="else" align="center" width="33%">دمای انجماد</td>
+      <td id="else" align="center" width="33%"></td>
+      <td id="else" align="center" width="33%">دمای ذوب</td>
+    </tr>
+    <tr dir="ltr">
+      <td id="else" align="center" width="33%">
+	  <input type="text" name="melt" value=" " size="18" readonly></td>
+      <td id="else" align="center" width="33%"></td>
+      <td id="else" align="center" width="33%">
+	  <input type="text" name="freeze" value=" " size="18" readonly></td>
+    </tr>
+  </table>
+</form>
+<hr width="600" align="center">
+<div align="center"><center>
+<table border="1" width="500" cellpadding="5">
+  <tr>
+    <td colspan="2" align="center" bgcolor="lightgray"><b><ins>راهنما</ins></b></td>
+  </tr>
+  <tr align="justify">
+    <td id="else"  align="center" bgcolor="#5F9EA0" width="15%">فلزات</td>
+    <td id="cross">
+		یک ماده ی جامد که رسانای خوبی برای الکتریسیته می باشد. قابلیت چکش خواری نیز دارد.</td>
+  </tr>
+  <tr align="justify">
+    <td id="else" align="center" bgcolor="#FF4500" width="15%">شبه فلزات</td>
+    <td id="cross">
+		عنصر میانی - گرما و الکتریسیته را از نافلز ها بهتر عبور می دهد اما نه به خوبی فلزات.
+		از نافلز ها راحت تر شکل می گیرند اما نه به راحتی فلزات.
+		در دمای اتاق، جامد هستند.</td>
+  </tr>
+  <tr align="justify">
+    <td id="else" align="center" bgcolor="#FFE4C4" width="15%">نا فلزات</td>
+    <td id="cross">
+		گرما و حرارت را بسیار کم عبور داده و به راحتی شکل نمی گیرند.</td>
+  </tr>
+</table>
+</center></div>
+</body>
+</html>
